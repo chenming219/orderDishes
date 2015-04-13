@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="YES">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="./js/all.js"></script>
+	<script src="./js/index.js"></script>
+	<title>京兆电子点餐系统</title>
+</head>
+<script type="text/javascript">
+	jsonData = {
+	dineName:'旭日院',
+	contentData:{
+			daily:[
+						{
+							foodname:'红酒醉雪梨',
+							favor:'5',
+							foodprice:40,
+						},
+						
+						{
+							foodname:'凉拌菜心',
+							favor:'4',
+							foodprice:40,
+						},
+						
+						{
+							foodname:'凉拌肚丝',
+							favor:'3',
+							foodprice:40,
+						},
+						{
+							foodname:'南瓜汤',
+							favor:'2',
+							foodprice:30,
+						},
+						{
+							foodname:'青笋虾球',
+							favor:'1',
+							foodprice:30,
+						},
+						{
+							foodname:'水晶虾饺',
+							favor:'2',
+							foodprice:90,
+						},
+						{
+							foodname:'水晶鱼冻',
+							favor:'3',
+							foodprice:80,
+						},
+						{
+							foodname:'蒜香茄汁烤翅',
+							favor:'4',
+							foodprice:60,
+						},
+						{
+							foodname:'香菇肥牛',
+							favor:'4',
+							foodprice:40,
+						},
+						{
+							foodname:'香酥鸡',
+							favor:'5',
+							foodprice:20,
+						},
+					
+			],
+			hotDishes:[
+						{
+							foodname:'剁椒土豆丝',
+							favor:'3',
+							foodprice:30,
+						},
+						{
+							foodname:'番茄炒菜花',
+							favor:'5',
+							foodprice:40,
+						},
+						{
+							foodname:'玲珑小炒',
+							favor:'1',
+							foodprice:70,
+						},
+						{
+							foodname:'毛家红烧肉',
+							favor:'2',
+							foodprice:30,
+						},
+						{
+							foodname:'毛血旺',
+							favor:'4',
+							foodprice:20,
+						},
+						{
+							foodname:'芹菜炒肉',
+							favor:'5',
+							foodprice:30,
+						},
+						{
+							foodname:'青椒炒肉',
+							favor:'3',
+							foodprice:20,
+						},
+						{
+							foodname:'蒜蓉菜心',
+							favor:'5',
+							foodprice:30,
+						},
+						{
+							foodname:'糖醋大虾',
+							favor:'3',
+							foodprice:20,
+						},
+						{
+							foodname:'小炒山羊肉',
+							favor:'4',
+							foodprice:90,
+						},
+					
+			],
+			coldDishes:[
+						{
+							foodname:'脆笋胗片',
+							favor:'2',
+							foodprice:60,
+						},
+						{
+							foodname:'夫妻肺片',
+							favor:'2',
+							foodprice:60,
+						},
+						{
+							foodname:'凉拌菠菜',
+							favor:'5',
+							foodprice:40,
+						},
+						{
+							foodname:'凉拌菜丝',
+							favor:'1',
+							foodprice:44,
+						},
+						{
+							foodname:'凉拌海带丝',
+							favor:'2',
+							foodprice:50,
+						},
+						{
+							foodname:'炝拌苦苣',
+							favor:'1',
+							foodprice:40,
+						},
+						{
+							foodname:'炝拌土豆丝',
+							favor:'1',
+							foodprice:32,
+						},
+						{
+							foodname:'水晶凉粉',
+							favor:'2',
+							foodprice:30,
+						},{
+							foodname:'酸辣蕨根粉',
+							favor:'5',
+							foodprice:30,
+						},
+						{
+							foodname:'西芹杏鲍菇',
+							favor:'4',
+							foodprice:40,
+						}
+			],
+			soup:[	
+						{
+							foodname:'八宝粥',
+							favor:'4',
+							foodprice:55,
+						},
+						{
+							foodname:'冰糖银耳雪梨',
+							favor:'5',
+							foodprice:43,
+						},
+						{
+							foodname:'番茄排骨汤',
+							favor:'5',
+							foodprice:43,
+						},
+						{
+							foodname:'红枣薏米粥',
+							favor:'4',
+							foodprice:43,
+						},
+						{
+							foodname:'罗宋汤',
+							favor:'4',
+							foodprice:43,
+						},
+						{
+							foodname:'奶油南瓜汤',
+							favor:'2',
+							foodprice:60,
+						},
+						{
+							foodname:'皮蛋瘦肉粥',
+							favor:'4',
+							foodprice:80,
+						},
+						{
+							foodname:'山药炖鸡汤',
+							favor:'3',
+							foodprice:90,
+						},
+						{
+							foodname:'土豆浓汤',
+							favor:'2',
+							foodprice:30,
+						},
+						{
+							foodname:'西湖牛肉羹',
+							favor:'5',
+							foodprice:50
+						}
+			],
+
+			signature:[
+					{
+							foodname:'红烧海参',
+							favor:'3',
+							foodprice:10
+						},
+						{
+							foodname:'威州碳焖鸡',
+							favor:'3',
+							foodprice:10,
+						},
+						{
+							foodname:'市师鸡',
+							favor:'3',
+							foodprice:10,
+						},
+						{
+							foodname:'红烧乾鲍',
+							favor:'3',
+							foodprice:10,
+						},
+						{
+							foodname:'肉焖鳝片',
+							favor:'3',
+							foodprice:10,
+						},
+						{
+							foodname:'宁波',
+							favor:'3',
+							foodprice:10,
+						},
+						{
+							foodname:'鸡烩蛇',
+							favor:'3',
+							foodprice:10,
+						},
+						{
+							foodname:'口水鸡',
+							favor:'3',
+							foodprice:10,
+						},
+						{
+							foodname:'金银蒜香明虾',
+							favor:'3',
+							foodprice:10,
+						},
+						{
+							foodname:'酒肆刀拔面',
+							favor:'3',
+							foodprice:10,
+						}
+			],
+			stapleFood:[
+					{
+							foodname:'千层饼',
+							favor:'2',
+							foodprice:40,
+						},
+						{
+							foodname:'菜卷',
+							favor:'3',
+							foodprice:20,
+						},
+						{
+							foodname:'烤包子',
+							favor:'4',
+							foodprice:40,
+						},
+						{
+							foodname:'菜包子',
+							favor:'5',
+							foodprice:60,
+						},
+						{
+							foodname:'哨子面',
+							favor:'3',
+							foodprice:50,
+						},
+						{
+							foodname:'旋饼',
+							favor:'3',
+							foodprice:40,					
+						},
+						{
+							foodname:'菜饼',
+							favor:'2',
+							foodprice:90,
+						},
+						{
+							foodname:'杂粮馒头',
+							favor:'3',
+							foodprice:30,
+						},
+						{
+							foodname:'麻团',
+							favor:'4',
+							foodprice:50,
+						},
+						{
+							foodname:'油饼',
+							favor:'3',
+							foodprice:30,
+						}
+
+			],
+			drinks:[
+						{
+							foodname:'柏龙啤酒',
+							favor:'3',
+							foodprice:32
+						},
+						{
+							foodname:'乐堡啤酒',
+							favor:'4',
+							foodprice:2
+						},
+						{
+							foodname:'荣膺啤酒',
+							favor:'5',
+							foodprice:2
+						},
+						{
+							foodname:'brabante 啤酒',
+							favor:'2',
+							foodprice:32
+						},
+						{
+							foodname:'青岛啤酒',
+							favor:'1',
+							foodprice:65
+						},
+						{
+							foodname:'雪花啤酒',
+							favor:'2',
+							foodprice:54
+						},
+						{
+							foodname:'汉斯果啤',
+							favor:'4',
+							foodprice:23
+						},
+						{
+							foodname:'柠檬汁',
+							favor:'5',
+							foodprice:43
+						},
+						{
+							foodname:'番茄汁',
+							favor:'3',
+							foodprice:10
+						},
+						{
+							foodname:'花茶',
+							favor:'3',
+							foodprice:10
+						}
+			]
+	},
+		tableNumber:'21',
+		orderId:'1234'
+	}
+	sortDishes = ['daily','signature','hotDishes','coldDishes','soup','stapleFood','drinks']; 
+
+	function addMenus(index){
+		var sortName = sortDishes[index-1];
+		var length = eval('jsonData.contentData.'+sortName+'.length;');
+		for(var i=0;i<length;i++){ 
+			var foodname = 	eval('jsonData.contentData.'+sortName+'['+i+'].foodname;');
+			var foodprice = eval('jsonData.contentData.'+sortName+'['+i+'].foodprice;');
+			var favor = eval('jsonData.contentData.'+sortName+'['+i+'].favor;');
+			var flog = eval('jsonData.contentData.'+sortName+'['+i+'].flog;');
+			createDishes(foodname,favor,foodprice,flog)
+		}
+	}
+
+</script>
+<body class="minijianshaoer">
+	<div data-role="header" id="header">
+		<img src="./images/back.png" id="goBack" style="float:left;margin-top:8px;margin-left:20px;width:18px;">
+		<span id="name" style="padding-left:40px;">点&nbsp;餐</span>
+		<span id="menu"></span>
+	</div>
+	<div id="sort">
+		<ul>
+			<li index="1" id="first" style="color:red;">推荐</li>
+			<li index="2">招牌</li>
+			<li index="3">热菜</li>
+			<li index="4">凉菜</li>
+			<li index="5">汤羹</li>
+			<li index="6">主食</li>
+			<li index="7">酒水</li>
+		</ul>
+	</div>
+	
+	<div id="dishesBlock">
+	</div>
+
+	<div id="orders">
+	</div>
+
+	<div id="payAndService">
+		<div id="pay">加菜</div>
+		<div id="service">确认</div>
+	</div>
+
+
+	<form name="fromdata" action="" method="get">
+		<input type="hidden"  id="data">
+		<input type="submit" style="display:none" />
+	</form>
+
+
+	<div id="tip">
+		<div id="input">
+			<input id="phoneInput" style="color:#8B8B86;" value="请输入手机号！" 
+			type="text"/>
+			<div id="btn">
+				<div id="begin">开始点餐</div>
+				<div id="browse" style="margin-left:20px;">浏览菜单</div>
+			</div>
+			
+		</div>
+		<div id="msgTip">
+				注:如果同桌已经有人开始点餐，请点击<b style="color:#fe3232;">浏览菜单</b>按钮！
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.md5.js"></script>
+<script type="text/javascript"> 
+    function youziku19466() {
+        var resultStr = $(".minijianshaoer").text();
+        var md5 = "";
+        resultStr = Trim(resultStr);
+        resultStr = SelectWord(resultStr);
+        md5 = $.md5("89e87b5b64d04d72a1dcbf74c4df66c1"+"minijianshaoer" + resultStr);
+        $.getJSON("http://www.youziku.com/webfont/CSSPOST?jsoncallback=?", { "id": md5, "guid": "89e87b5b64d04d72a1dcbf74c4df66c1", "type": "5" }, function (json) {
+            if (json.result == 0) {
+                $.post("http://www.youziku.com/webfont/PostCorsCreateFont", { "name": "minijianshaoer", "gid": "89e87b5b64d04d72a1dcbf74c4df66c1", "type": "5", "text": resultStr }, function (json) {
+                if (json == "0") { 
+                } else if (json == "2") {
+                } else if (json == "3") {
+                } else {
+                }
+            });
+            }
+            else {
+                loadExtentFile("http://www.youziku.com/webfont/css?id=" + md5 + "&guid=" + "89e87b5b64d04d72a1dcbf74c4df66c1" + "&type=5");
+            }
+        });
+    }
+    (function youziku() {
+    if (window.location.href.toString().substring(0, 7) == "file://") {
+        }else{
+       	 youziku19466();
+        }
+    })()
+</script>
+</html>

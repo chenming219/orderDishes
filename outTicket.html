@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="YES">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/outTicket.css">
+	<script src="./js/all.js"></script>
+	<script src="./js/outTicket.js"></script>
+	<title>京兆电子点餐系统</title>
+</head>
+<script type="text/javascript">
+	var	data = {
+		dishes:[ 
+			{name:'酸菜肉丝面',count:4,price:36},
+			{name:'酸菜肉丝面',count:4,price:36},
+			{name:'酸菜肉丝面',count:4,price:36},
+			{name:'酸菜肉丝面',count:4,price:36},
+			{name:'酸菜肉丝面',count:4,price:36},
+			{name:'酸菜肉丝面',count:4,price:36},
+			{name:'酸菜肉丝面',count:4,price:36},
+			{name:'酸菜肉丝面',count:4,price:36},
+			{name:'酸菜面',count:4,price:36},
+			{name:'酸菜肉丝面面',count:4,price:36},
+			{name:'酸菜肉丝面',count:4,price:36}
+		],
+		date:'2014-12-12 12:30',
+		tableId:'12号',
+		total:123,
+		orderId:12
+};	
+
+function createPage(){ 
+	for(var i=0;i<data.dishes.length;i++){ 
+		var name = data.dishes[i].name;
+		var count = data.dishes[i].count;
+		var price  = data.dishes[i].price;
+		createEle(name,count,price);
+	}
+}
+
+</script>
+<body>
+	<header>
+		<!--<img src="./images/back.jpg" style="float:left;margin:10px;"  id="goBack">-->
+		出&nbsp;票
+	</header>
+	<div id="ticket">
+		<div id="orderId">
+			<img src="./images/oid.png" style="width:20px;height:20px;">
+			<span>订单号：<label id="oid" class="a" ></label>号</span>
+		</div>
+		<div id="tableAndDate">
+			<div class="footer">桌号：<span id="table"></span></div>
+			<div class="footer">下单时间：<span id="date"></span></div>
+			<div class="footer">消费金额：<span id="total"></span>元</div>
+		</div>
+	</div>
+	<div id="payAndService">
+		<div id="pay">在线支付</div>
+		<div id="service">其他服务</div>
+	</div>
+</body>
+</html>

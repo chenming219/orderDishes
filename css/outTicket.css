@@ -1,0 +1,54 @@
+body{ 
+	margin: 0px;height: 0px;
+}
+.a{ 
+	color: red;
+}
+header{ 
+	text-align: center;line-height: 45px;border-bottom: 2px solid #989895;color: red;
+	font-size: 24px;
+}
+#ticket{ 
+	border-top: 1px solid red;border-left: 1px solid #989895;
+	border-right: 1px solid #989895;
+}
+#orderId{ 
+	width: 90%;margin: 0px auto;border-bottom: 1px solid #989895;font-size: 20px;
+	line-height: 60px;
+}
+.msg{ 
+	width: 230px;height:30px;margin: 0px auto;line-height: 30px;
+}
+.name{ 
+	float: left;
+}
+.number{ 
+	float: right;
+}
+.price{ 
+	float: right;padding-right: 10px;
+}
+#tableAndDate{ 
+	
+}
+#table{ 
+	color: red;
+}
+#total{ 
+	color: red;
+}
+#date{ 
+	color: red;
+}
+#payAndService{ 
+	width: 240px;height: 50px;margin: 50px auto;color: white;font-size: 18px;line-height: 40px;text-align: center;
+}
+#pay{ 
+	float: left;width: 100px;background: #fe3232;border-radius: 10px;height: 40px;
+}
+#service{ 
+	border-radius: 10px;float: left;width: 100px;margin-left: 40px;background: #fe3232;height:40px;
+}
+.footer{ 
+	margin-left: 20px;margin-top: 10px;
+}
